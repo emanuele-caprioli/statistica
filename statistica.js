@@ -72,3 +72,67 @@ function visualizzaDati()
 	}
 	tab.appendChild(tabella);
 }
+var vis= false;
+function contaSesso(){
+  if(!vis){
+    vis=!vis;
+	var m=0;
+	var f=0;
+	for(var i in dati){
+		for(var x in dati[i]){
+			if(x == "Sesso"){
+				if(dati[i][x] == "F"){
+					f++;
+				}
+				else{
+					m++;
+				}
+			}
+		}
+	}
+	document.getElementById("dati2").innerHTML = " Maschi: "+ m + " Femmine: "+f;
+  }
+  else{
+    document.getElementById("dati2").innerHTML="";
+    vis=!vis;
+  }
+}
+
+function contaTitoloStudio(){
+	var no = 0;
+	var not = "No titolo: ";
+	var le = 0;
+	var lie = "Licenza elem: ";
+	var lm = 0;
+	var lim = "Licenza media: ";
+	var d = 0;
+	var di = "Diploma: ";
+	var la = 0;
+	var lau = "Laurea: ";
+	for(var i in dati){
+		for(var x in dati[i]){
+			if(x == "Titolo"){
+				switch(dati[i][x]){
+					case 0:
+						no++;
+						break;
+					case 1:
+						le++;
+						break;
+					case 2:
+						lm++;
+						break;
+					case 3:
+						d++;
+						break;
+					case 4:
+						la++;
+						break;
+					default:
+						break;
+				}
+			}
+		}
+	}
+	document.getElementById("dati3").innerHTML = not + no + " " + lie + le + " " + lim + lm + " " + di + d + " " + lau + la;
+}
