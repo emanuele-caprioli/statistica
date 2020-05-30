@@ -1,0 +1,11 @@
+[
+	{"Nome":"Aldo",  "Sesso":"M", "Eta":32, "Titolo":2},
+	{"Nome":"Barbara",  "Sesso":"F", "Eta":35, "Titolo":0},
+	{"Nome":"Carla",  "Sesso":"F", "Eta":30, "Titolo":3},
+	{"Nome":"Dario",  "Sesso":"M", "Eta":25, "Titolo":1},
+	{"Nome":"Enrica",  "Sesso":"F", "Eta":28, "Titolo":4},
+	{"Nome":"Filippo",  "Sesso":"M", "Eta":24, "Titolo":3},
+	{"Nome":"Gabriella","Sesso":"F","Eta":27,"Titolo":4},
+  {"Nome":"Irene", "Sesso":"F","eta":24,"Titolo":4}
+]
+
