@@ -1,19 +1,28 @@
 table{
   /*width:100%;*/
   text-align:center;
-  color:white;
-  background-color:yellow;
+  color:black;
+  background-color:green;
   font-family:verdana;
 }
 tr{
-  background-color:#6b5b95;
+  background-color:#f2ffe6 ;
 }
 tr.orange{
   background-color:orange;
   font-size:120%;
 }
 tr.purple{
-  background-color:purple;
+  color: white;
+  background-color:rgb(6, 100, 6);
   font-size:120%;
+}
+.button{
+	border-style: solid;
+ 	border-color: green;
+	background-color: #f2ffe6;
+	color: black;
+	padding: 9px 16px;
+	border-radius: 12px;
 }
 

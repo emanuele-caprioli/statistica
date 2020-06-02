@@ -90,7 +90,7 @@ function contaSesso(){
 			}
 		}
 	}
-	document.getElementById("dati2").innerHTML = " Maschi: "+ m + " Femmine: "+f;
+	document.getElementById("dati2").innerHTML = " Femmine: "+ f + " Maschi: "+m;
   }
   else{
     document.getElementById("dati2").innerHTML="";
@@ -99,14 +99,14 @@ function contaSesso(){
 }
 
 function contaTitoloStudio(){
-	var no = 0;
+	var nt = 0;
 	var not = "No titolo: ";
 	var le = 0;
-	var lie = "Licenza elem: ";
+	var lem = "Licenza elem: ";
 	var lm = 0;
-	var lim = "Licenza media: ";
+	var lmed = "Licenza media: ";
 	var d = 0;
-	var di = "Diploma: ";
+	var dip = "Diploma: ";
 	var la = 0;
 	var lau = "Laurea: ";
 	for(var i in dati){
@@ -114,7 +114,7 @@ function contaTitoloStudio(){
 			if(x == "Titolo"){
 				switch(dati[i][x]){
 					case 0:
-						no++;
+						nt++;
 						break;
 					case 1:
 						le++;
@@ -134,5 +134,5 @@ function contaTitoloStudio(){
 			}
 		}
 	}
-	document.getElementById("dati3").innerHTML = not + no + " " + lie + le + " " + lim + lm + " " + di + d + " " + lau + la;
+	document.getElementById("dati3").innerHTML = not + nt + " " + lem + le + " " + lmed + lm + " " + dip + d + " " + lau + la;
 }
